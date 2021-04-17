@@ -260,9 +260,35 @@ class Coordinate2D:
         return self.x == target.x and self.y == target.y
 
     def __add__(self, target: Coordinate2D) -> Coordinate2D:
+        """
+        Add 2 coordinate
+
+        Parameters
+        ----------
+        target: Coordinate2D
+            the coordinate we want to add
+
+        Returns
+        -------
+        Coordinate2D
+            the result of the addition
+        """
         return Coordinate2D(self.x + target.x, self.y + target.y)
 
     def __sub__(self, target: Coordinate2D) -> Coordinate2D:
+        """
+        Substract 2 coordinate
+
+        Parameters
+        ----------
+        target: Coordinate2D
+            the coordinate we want to substract
+
+        Returns
+        -------
+        Coordinate2D
+            the result of the substraction
+        """
         return Coordinate2D(self.x - target.x, self.y - target.y)
 
     def __str__(self) -> str:
